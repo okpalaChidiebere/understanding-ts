@@ -1,3 +1,4 @@
+"use strict";
 // Object value in TypeScript is written in key-value pairs(FYI: you need to know the object property(s) .  you can still log person or person.name. 
 //best and optimal way to write and initialize TypeScript Bbject Type
 var person = {

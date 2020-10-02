@@ -1,3 +1,4 @@
+"use strict";
 function add(n1, n2, showResult, phrase) {
     var result = n1 + n2;
     if (showResult) {
@@ -7,6 +8,7 @@ function add(n1, n2, showResult, phrase) {
     else {
         return n1 + n2;
     }
+    return;
 }
 //No difference between integer and float
 // let number1; //it is not a good practise. Remember, you have to be precise while writing typescript
@@ -14,12 +16,12 @@ function add(n1, n2, showResult, phrase) {
 // let number1 = 22 // Also a good practise; In addition TypeScrit does a good jo in detecting that a number 'Type; is stored  in the variable.
 var number1 = 5;
 var number2 = 2.8;
-var printResult = true; //we use const Type when we dont want the variable value t0 be changed
+var printResult1 = true; //we use const Type when we dont want the variable value t0 be changed
 //let printResult = true; this will still work but the variable's value( the value can be of any type number, bool, or even an {object} ) can be changed or re-assigned down the line.
 var resultPhrase = 'Result is: ';
 //const result1 = add(number1, number2);
 //console.log(result1); // 7.8
-add(number1, number2, printResult, resultPhrase);
+add(number1, number2, printResult1, resultPhrase);
 /** Understanding unknown type */
 var userInput;
 userInput = 3;

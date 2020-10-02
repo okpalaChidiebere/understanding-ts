@@ -8,7 +8,7 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string){
     else{
         return n1 + n2;
     }
-    
+    return;
 }
 
 //No difference between integer and float
@@ -18,7 +18,7 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string){
 const number1 = 5;
 const number2 = 2.8;
 
-const printResult = true; //we use const Type when we dont want the variable value t0 be changed
+const printResult1 = true; //we use const Type when we dont want the variable value t0 be changed
 //let printResult = true; this will still work but the variable's value( the value can be of any type number, bool, or even an {object} ) can be changed or re-assigned down the line.
 
 const resultPhrase = 'Result is: ';
@@ -26,7 +26,7 @@ const resultPhrase = 'Result is: ';
 //const result1 = add(number1, number2);
 //console.log(result1); // 7.8
 
-add(number1, number2, printResult, resultPhrase);
+add(number1, number2, printResult1, resultPhrase);
 
 /** Understanding unknown type */
 let userInput: unknown;
